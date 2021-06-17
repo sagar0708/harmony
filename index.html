@@ -517,17 +517,6 @@
 <script src="js/jquery.min.js"></script>
 <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
-    $('.heart-slider').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: false,
-        autoplaySpeed: 2000,
-        dots: true,
-        arrow: true,
-        prevArrow: '<button type="button" data-role="none" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
-        nextArrow: '<button type="button" data-role="none" class="slick-next"><i class="fa fa-angle-right"></i></button>',
-    });
-
     //----------------------READ MORE BUTTON CODE-------------------------------
 
     $(document).ready(function() {
@@ -563,6 +552,16 @@
         $(".menu-icon").on("click", function() {
             $("#mySidenav").slideToggle('fast');
         })
+        $('.heart-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            dots: true,
+            arrow: true,
+            prevArrow: '<button type="button" data-role="none" class="slick-prev"><i class="fa fa-angle-left"></i></button>',
+            nextArrow: '<button type="button" data-role="none" class="slick-next"><i class="fa fa-angle-right"></i></button>',
+        });
     });
 
     // ----------Toggle button code-------------------------------------
